@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NOVA | Deals</title>
+
+    <link
+        rel="stylesheet"
+        href="Deals.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+
+<header class="top-header">
+
+    <a
+        href="index.html"
+        class="logo"
+    >
+        NOVA
+    </a>
+
+    <nav class="top-links">
+
+        <a href="index.html">Home</a>
+        <a href="Products.html">Products</a>
+        <a href="Categories.html">Categories</a>
+        <a href="Deals.html">Deals</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+
+    </nav>
+
+    <div class="nav-right">
+
+        <button
+            type="button"
+            class="header-icon search-button"
+            id="search-button"
+            aria-label="Search"
+        >
+            ⌕
+        </button>
+
+        <a
+            href="Cart.html"
+            class="header-icon cart-button"
+            aria-label="Shopping cart"
+        >
+
+            🛒
+
+            <span
+                class="cart-count"
+                id="cart-count"
+            >
+                0
+            </span>
+
+        </a>
+
+        <button
+            type="button"
+            class="hamburger-button"
+            id="menu-button"
+            aria-label="Open menu"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+</header>
+
+
+<div
+    class="search-dropdown"
+    id="search-dropdown"
+>
+
+    <div class="search-box">
+
+        <span class="search-symbol">
+            ⌕
+        </span>
+
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Search products..."
+            autocomplete="off"
+        >
+
+        <button
+            type="button"
+            class="close-search"
+            id="close-search"
+            aria-label="Close search"
+        >
+            ×
+        </button>
+
+    </div>
+
+    <div
+        class="search-results"
+        id="search-results"
+    ></div>
+
+</div>
+
+
+<div
+    class="dropdown-overlay"
+    id="dropdown-overlay"
+></div>
+
+
+<main>
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-headings">
+
+            <div class="left-heading">
+
+                <h1 data-typewriter>
+
+                    <span class="Big">
+                        Big Deals
+                    </span>
+
+                    <span class="Bigger">
+                        Bigger Upgrades
+                    </span>
+
+                </h1>
+
+                <p class="hero-description">
+                    Save on selected NOVA devices while the offer lasts.
+                </p>
+
+                <a
+                    href="#top-deals"
+                    class="deal-button"
+                >
+                    Shop the Deals
+                </a>
+
+            </div>
+
+
+            <div class="right-heading">
+
+                <h2>
+
+                    <span class="Summer">
+                        NOVA
+                    </span>
+
+                    <span class="Tech">
+                        TECH SALE
+                    </span>
+
+                </h2>
+
+                <h3>
+
+                    <span class="OFF">
+                        Up To
+                    </span>
+
+                    <span class="UP">
+                        15% OFF
+                    </span>
+
+                </h3>
+
+            </div>
+
+        </div>
+
+
+        <div class="stats">
+
+            <div class="stats-grid">
+
+                <div class="stat">
+
+                    <h2 id="deal-days">
+                        0
+                    </h2>
+
+                    <p>
+                        Days
+                    </p>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <h2 id="deal-hours">
+                        0
+                    </h2>
+
+                    <p>
+                        Hours
+                    </p>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <h2 id="deal-minutes">
+                        0
+                    </h2>
+
+                    <p>
+                        Minutes
+                    </p>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <h2 id="deal-seconds">
+                        0
+                    </h2>
+
+                    <p>
+                        Seconds
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section
+    class="Top-Deals"
+    id="top-deals"
+>
+
+    <div class="deals-section-header">
+
+        <div>
+
+            <p class="section-label">
+                LIMITED TIME
+            </p>
+
+            <h2>
+                Top Deals
+            </h2>
+
+        </div>
+
+        <a href="Products.html">
+            View All Products
+        </a>
+
+    </div>
+
+
+    <div
+        class="Deals-container"
+        id="deals-container"
+    >
+
+
+        <article
+            class="Deals-card"
+            data-product-id="nova-aura"
+        >
+
+            <div class="discount">
+                11% OFF</div>
+
+            <div class="product-image">
+
+                <img
+                    src="aura-graphite-01.png"
+                    alt="NOVA AURA"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <p class="product-category">
+                    Phones
+                </p>
+
+                <h3>
+                    NOVA AURA
+                </h3>
+
+                <div class="price-row">
+
+                    <del>
+                        ₦649,000
+                    </del>
+
+                    <strong>
+                        ₦579,000
+                    </strong>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="add-to-cart"
+                    data-product-id="nova-aura"
+                    data-deal="true"
+                    data-discount="11% OFF"
+                    data-deal-price="579000"
+                    data-original-price="649000"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="Deals-card"
+            data-product-id="nova-flex"
+        >
+
+            <div class="discount">
+                10% OFF</div>
+
+            <div class="product-image">
+
+                <img
+                    src="flex-obsidian-01.png"
+                    alt="NOVA FLEX"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <p class="product-category">
+                    Phones
+                </p>
+
+                <h3>
+                    NOVA FLEX
+                </h3>
+
+                <div class="price-row">
+
+                    <del>
+                        ₦899,000
+                    </del>
+
+                    <strong>
+                        ₦809,000
+                    </strong>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="add-to-cart"
+                    data-product-id="nova-flex"
+                    data-deal="true"
+                    data-discount="10% OFF"
+                    data-deal-price="809000"
+                    data-original-price="899000"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="Deals-card"
+            data-product-id="nova-sonic-plus"
+        >
+
+            <div class="discount">
+                15% OFF</div>
+
+            <div class="product-image">
+
+                <img
+                    src="sonic-plus-graphite-01.png"
+                    alt="NOVA SONIC+"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <p class="product-category">
+                    Audio
+                </p>
+
+                <h3>
+                    NOVA SONIC+
+                </h3>
+
+                <div class="price-row">
+
+                    <del>
+                        ₦99,000
+                    </del>
+
+                    <strong>
+                        ₦84,000
+                    </strong>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="add-to-cart"
+                    data-product-id="nova-sonic-plus"
+                    data-deal="true"
+                    data-discount="15% OFF"
+                    data-deal-price="84000"
+                    data-original-price="99000"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="Deals-card"
+            data-product-id="nova-vault-pro"
+        >
+
+            <div class="discount">
+                14% OFF</div>
+
+            <div class="product-image">
+
+                <img
+                    src="vault-pro-graphite-01.png"
+                    alt="NOVA VAULT PRO"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <p class="product-category">
+                    Power
+                </p>
+
+                <h3>
+                    NOVA VAULT PRO
+                </h3>
+
+                <div class="price-row">
+
+                    <del>
+                        ₦85,000
+                    </del>
+
+                    <strong>
+                        ₦73,000
+                    </strong>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="add-to-cart"
+                    data-product-id="nova-vault-pro"
+                    data-deal="true"
+                    data-discount="14% OFF"
+                    data-deal-price="73000"
+                    data-original-price="85000"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+
+            <h2>
+                NOVA
+            </h2>
+
+            <p>
+                Technology refined for your everyday life.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Product
+            </h3>
+
+            <a href="Products.html?category=phones">
+                Phones
+            </a>
+
+            <a href="Products.html?category=laptops">
+                Laptops
+            </a>
+
+            <a href="Products.html?category=audio">
+                Audio
+            </a>
+
+            <a href="Products.html?category=watches">
+                Watches
+            </a>
+
+            <a href="Products.html?category=power">
+                Power
+            </a>
+
+            <a href="Products.html?category=chargers">
+                Chargers
+            </a>
+
+            <a href="Products.html?category=accessories">
+                Accessories
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Company
+            </h3>
+
+            <a href="About.html">
+                About
+            </a>
+
+            <a href="#">
+                Careers
+            </a>
+
+            <a href="#">
+                Privacy
+            </a>
+
+            <a href="#">
+                Terms
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Support
+            </h3>
+
+            <a href="Contact.html">
+                Contact
+            </a>
+
+            <a href="#">
+                Help Center
+            </a>
+
+            <a href="#">
+                FAQ
+            </a>
+
+            <a href="#">
+                Shipping
+            </a>
+
+        </div>
+
+
+        <div class="footer-social">
+
+            <h3>
+                Follow Us
+            </h3>
+
+            <p>
+                Stay connected with NOVA.
+            </p>
+
+            <div class="social-icons">
+
+                <a
+                    href="https://instagram.com/iamprincekamsi/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                >
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a
+                    href="https://tiktok.com/@iamprincewill8/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="TikTok"
+                >
+                    <i class="fab fa-tiktok"></i>
+                </a>
+
+                <a
+                    href="https://youtube.com/@Princekamsiyochukwu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="YouTube"
+                >
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+                <a
+                    href="https://wa.me/2348119819202/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="WhatsApp"
+                >
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 NOVA. All rights reserved.
+        </p>
+
+        <div>
+
+            <a href="#">
+                Privacy
+            </a>
+
+            <a href="#">
+                Terms
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="site.js"></script>
+<script src="Deals.js"></script>
+
+
+</body>
+
+</html>

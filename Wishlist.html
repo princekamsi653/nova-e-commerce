@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA | Wishlist</title>
+    <link rel="stylesheet" href="Wishlist 1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<header class="top-header">
+    <a href="index.html" class="logo">NOVA</a>
+    <nav class="top-links">
+        <a href="index.html">Home</a>
+        <a href="Products.html">Products</a>
+        <a href="Categories.html">Categories</a>
+        <a href="Deals.html">Deals</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+    <div class="nav-right">
+        <button type="button" class="header-icon search-button" id="search-button" aria-label="Search">⌕</button>
+        <a href="Cart.html" class="header-icon cart-button" aria-label="Shopping cart">🛒<span class="cart-count" id="cart-count">0</span></a>
+        <button type="button" class="hamburger-button" id="menu-button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+</header>
+<div class="search-dropdown" id="search-dropdown">
+    <div class="search-box"><span class="search-symbol">⌕</span><input type="text" id="search-input" placeholder="Search products..." autocomplete="off"><button type="button" class="close-search" id="close-search" aria-label="Close search">×</button></div>
+    <div class="search-results" id="search-results"></div>
+</div>
+<div class="dropdown-overlay" id="dropdown-overlay"></div>
+
+<main>
+    <section class="wishlist-hero">
+        <p class="eyebrow">YOUR NOVA PICKS</p>
+        <h1>Wishlist</h1>
+        <p>Keep the technology you love in one place and come back whenever you're ready.</p>
+    </section>
+    <section class="wishlist-section">
+        <div class="wishlist-heading">
+            <div><h2>Saved Products</h2><p id="wishlist-summary">0 products saved</p></div>
+            <a href="Products.html" class="browse-link">Browse Products</a>
+        </div>
+        <div id="wishlist-grid" class="wishlist-grid"></div>
+        <div id="wishlist-empty" class="wishlist-empty" hidden>
+            <div class="empty-heart">♡</div>
+            <h2>Your wishlist is waiting.</h2>
+            <p>Save products you like and they'll stay here for your next visit.</p>
+            <a href="Products.html">Explore NOVA</a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-brand"><h2>NOVA</h2><p>Technology refined for your everyday life.</p></div>
+        <div class="footer-column"><h3>Product</h3><a href="Products.html">Phones</a><a href="Products.html">Laptops</a><a href="Products.html">Audio</a><a href="Categories.html">All Categories</a></div>
+        <div class="footer-column"><h3>Company</h3><a href="About.html">About</a><a href="Contact.html">Contact</a><a href="#">Privacy</a><a href="#">Terms</a></div>
+        <div class="footer-column"><h3>Shop</h3><a href="Wishlist.html">Wishlist</a><a href="Cart.html">Cart</a><a href="Deals.html">Deals</a><a href="Products.html">Products</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 NOVA. All rights reserved.</p></div>
+</footer>
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+<script src="site.js"></script>
+<script src="Wishlist.js"></script>
+</body>
+</html>

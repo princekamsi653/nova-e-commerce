@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NOVA | Your Cart</title>
+
+    <link
+        rel="stylesheet"
+        href="cart.css"
+    >
+
+</head>
+
+<body>
+
+    <header class="top-header">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+            NOVA
+        </a>
+
+        <nav class="top-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="Products.html">
+                Products
+            </a>
+
+            <a href="Categories.html">
+                Categories
+            </a>
+
+            <a href="Deals.html">
+                Deals
+            </a>
+
+            <a href="About.html">
+                About
+            </a>
+
+            <a href="Contact.html">Contact</a>
+
+        </nav>
+
+        <div class="nav-right">
+
+            <button
+                type="button"
+                class="header-icon search-button"
+                id="search-button"
+                aria-label="Search"
+            >
+                ⌕
+            </button>
+
+            <a
+                href="Cart.html"
+                class="header-icon cart-button"
+                aria-label="Shopping cart"
+            >
+                🛒
+
+                <span
+                    class="cart-count"
+                    id="cart-count"
+                >
+                    0
+                </span>
+            </a>
+
+            
+
+        </div>
+
+    </header>
+
+
+    <div
+        class="search-dropdown"
+        id="search-dropdown"
+    >
+
+        <div class="search-box">
+
+            <span class="search-symbol">
+                ⌕
+            </span>
+
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search products..."
+                autocomplete="off"
+            >
+
+            <button
+                type="button"
+                class="close-search"
+                id="close-search"
+                aria-label="Close search"
+            >
+                ×
+            </button>
+
+        </div>
+
+        <div
+            class="search-results"
+            id="search-results"
+        ></div>
+
+    </div>
+
+
+    <div
+        class="dropdown-overlay"
+        id="dropdown-overlay"
+    ></div>
+
+
+    <main class="cart-page">
+
+        <div class="cart-header">
+
+            <div>
+
+                <p class="cart-label">
+                    SHOPPING CART
+                </p>
+
+                <h1>
+                    Your Cart
+                </h1>
+
+                <p id="cart-item-text">
+                    Your selected products
+                </p>
+
+            </div>
+
+            <a
+                href="Products.html"
+                class="continue-shopping"
+            >
+                ← Continue Shopping
+            </a>
+
+        </div>
+
+
+        <div class="cart-layout">
+
+            <section class="cart-items-section">
+
+                <div
+                    id="cart-items"
+                    class="cart-items"
+                ></div>
+
+
+                <div
+                    id="empty-cart"
+                    class="empty-cart"
+                >
+
+                    <div class="empty-cart-icon">
+                        🛒
+                    </div>
+
+                    <h2>
+                        Your cart is empty
+                    </h2>
+
+                    <p>
+                        Looks like you haven't added anything to your cart yet.
+                    </p>
+
+                    <a href="Products.html">
+                        Start Shopping
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <aside class="cart-summary">
+
+                <h2>
+                    Order Summary
+                </h2>
+
+                <div class="summary-row">
+
+                    <span>
+                        Subtotal
+                    </span>
+
+                    <strong id="cart-subtotal">
+                        ₦0
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Delivery
+                    </span>
+
+                    <span>
+                        Calculated at checkout
+                    </span>
+
+                </div>
+
+
+                <div class="summary-line"></div>
+
+
+                <div class="summary-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="cart-total">
+                        ₦0
+                    </strong>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="checkout-button"
+                    id="checkout-button"
+                >
+                    Checkout
+                </button>
+
+
+                <p class="secure-text">
+                    Secure checkout • Fast delivery • 1 Year warranty
+                </p>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <h2>
+                    NOVA
+                </h2>
+
+                <p>
+                    Technology refined for your everyday life.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Product
+                </h3>
+
+                <a href="Products.html">
+                    Phones
+                </a>
+
+                <a href="Products.html">
+                    Laptops
+                </a>
+
+                <a href="Products.html">
+                    Audio
+                </a>
+
+                <a href="Products.html">
+                    Accessories
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Company
+                </h3>
+
+                <a href="About.html">
+                    About
+                </a>
+
+                <a href="#">
+                    Careers
+                </a>
+
+                <a href="#">
+                    Privacy
+                </a>
+
+                <a href="#">
+                    Terms
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Support
+                </h3>
+
+                <a href="#">
+                    Contact
+                </a>
+
+                <a href="#">
+                    Help Center
+                </a>
+
+                <a href="#">
+                    FAQ
+                </a>
+
+                <a href="#">
+                    Shipping
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 NOVA. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="Product.js"></script>
+    <script src="site.js"></script>
+    <script src="cart.js"></script>
+
+</body>
+
+</html>

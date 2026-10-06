@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="google-site-verification"
+        content="E1t8seXe4FkP1gGQ0VygwPh6oIg7WVUODaqgXVJ8Ni4"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <title>NOVA | Technology Refined</title>
+
+</head>
+
+<body>
+
+
+<header class="top-header">
+
+    <a
+        href="index.html"
+        class="logo"
+    >
+        NOVA
+    </a>
+
+    <nav class="top-links">
+
+        <a href="index.html">Home</a>
+        <a href="Products.html">Products</a>
+        <a href="Categories.html">Categories</a>
+        <a href="Deals.html">Deals</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+
+    </nav>
+
+    <div class="nav-right">
+
+        <button
+            type="button"
+            class="header-icon search-button"
+            id="search-button"
+            aria-label="Search"
+        >
+            ⌕
+        </button>
+
+        <a
+            href="Cart.html"
+            class="header-icon cart-button"
+            aria-label="Shopping cart"
+        >
+            🛒
+
+            <span
+                class="cart-count"
+                id="cart-count"
+            >
+                0
+            </span>
+        </a>
+
+        <button
+            type="button"
+            class="hamburger-button"
+            id="menu-button"
+            aria-label="Open menu"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+</header>
+
+
+<div
+    class="dropdown-overlay"
+    id="dropdown-overlay"
+></div>
+
+
+<div
+    class="search-dropdown"
+    id="search-dropdown"
+>
+
+    <div class="search-box">
+
+        <span class="search-symbol">
+            ⌕
+        </span>
+
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Search products..."
+            autocomplete="off"
+        >
+
+        <button
+            type="button"
+            class="close-search"
+            id="close-search"
+            aria-label="Close search"
+        >
+            ×
+        </button>
+
+    </div>
+
+    <div
+        class="search-results"
+        id="search-results"
+    ></div>
+
+</div>
+
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <h1 data-typewriter>
+
+            <span class="technology">
+                Technology
+            </span>
+
+            <span class="refined">
+                Refined
+            </span>
+
+        </h1>
+
+        <p>
+            Discover thoughtfully designed technology
+            <br>
+            built to make your world faster, smarter and simpler.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button
+                type="button"
+                onclick="window.location.href='Products.html'"
+            >
+                Shop Now
+            </button>
+
+            <button
+                type="button"
+                onclick="window.location.href='Deals.html'"
+            >
+                Explore Deals
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="categories">
+
+    <div class="category-header">
+
+        <h2>
+            Shop by Category
+        </h2>
+
+        <a href="Categories.html">
+            View All
+        </a>
+
+    </div>
+
+
+    <div class="category-container">
+
+        <div class="category-card">
+
+            <a href="Products.html?category=phones">
+
+                <img
+                    src="aura-graphite-01.png"
+                    alt="NOVA phones"
+                >
+
+            </a>
+
+            <h3>
+
+                <a href="Products.html?category=phones">
+                    Phones
+                </a>
+
+            </h3>
+
+        </div>
+
+
+        <div class="category-card">
+
+            <a href="Products.html?category=laptops">
+
+                <img
+                    src="luma-black-01.png"
+                    alt="NOVA laptops"
+                >
+
+            </a>
+
+            <h3>
+
+                <a href="Products.html?category=laptops">
+                    Laptops
+                </a>
+
+            </h3>
+
+        </div>
+
+
+        <div class="category-card">
+
+            <a href="Products.html?category=audio">
+
+                <img
+                    src="sonic-black-01.png"
+                    alt="NOVA audio products"
+                >
+
+            </a>
+
+            <h3>
+
+                <a href="Products.html?category=audio">
+                    Audio
+                </a>
+
+            </h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="products">
+
+    <div class="products-header">
+
+        <h2>
+            Featured Products
+        </h2>
+
+        <a href="Products.html">
+            View All
+        </a>
+
+    </div>
+
+
+    <div class="product-container">
+
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="aura-graphite-01.png"
+                    alt="NOVA AURA"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>
+                    NOVA AURA
+                </h3>
+
+                <p class="rating">
+                    ★★★★★
+                    <span>4.9</span>
+                </p>
+
+                <p class="price">
+                    ₦649,000
+                </p>
+
+                <a
+                    href="Product-details.html?id=nova-aura"
+                    class="view-details"
+                >
+                    View Details
+                </a>
+
+                <button
+                    type="button"
+                    class="add-to-cart"
+                    data-product-id="nova-aura"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="luma-black-01.png"
+                    alt="NOVA LUMA"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>
+                    NOVA LUMA
+                </h3>
+
+                <p class="rating">
+                    ★★★★★
+                    <span>4.8</span>
+                </p>
+
+                <p class="price">
+                    ₦699,000
+                </p>
+
+                <a
+                    href="Product-details.html?id=nova-luma"
+                    class="view-details"
+                >
+                    View Details
+                </a>
+
+                <button
+                    type="button"
+                    class="add-to-cart"
+                    data-product-id="nova-luma"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="sonic-plus-graphite-01.png"
+                    alt="NOVA SONIC+"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>
+                    NOVA SONIC+
+                </h3>
+
+                <p class="rating">
+                    ★★★★★
+                    <span>4.8</span>
+                </p>
+
+                <p class="price">
+                    ₦99,000
+                </p>
+
+                <a
+                    href="Product-details.html?id=nova-sonic-plus"
+                    class="view-details"
+                >
+                    View Details
+                </a>
+
+                <button
+                    type="button"
+                    class="add-to-cart"
+                    data-product-id="nova-sonic-plus"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="pulse-watch-graphite-01.png"
+                    alt="NOVA PULSE WATCH"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>
+                    NOVA PULSE WATCH
+                </h3>
+
+                <p class="rating">
+                    ★★★★★
+                    <span>4.7</span>
+                </p>
+
+                <p class="price">
+                    ₦169,000
+                </p>
+
+                <a
+                    href="Product-details.html?id=nova-pulse-watch"
+                    class="view-details"
+                >
+                    View Details
+                </a>
+
+                <button
+                    type="button"
+                    class="add-to-cart"
+                    data-product-id="nova-pulse-watch"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="upgrade">
+
+    <div class="upgrade-text">
+
+        <h2>
+            Upgrade Your Everyday
+        </h2>
+
+        <p>
+            Discover selected NOVA devices with limited-time savings.
+        </p>
+
+        <a href="Deals.html">
+            View Deals
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="newsletter">
+
+    <div class="newsletter-text">
+
+        <h2>
+            Stay Ahead
+        </h2>
+
+        <p>
+            Get the latest products, exclusive deals,
+            and updates from NOVA.
+        </p>
+
+    </div>
+
+    <div class="subscribe">
+
+        <input
+            type="email"
+            placeholder="Enter your email"
+        >
+
+        <button type="submit">
+            Subscribe
+        </button>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+
+            <h2>
+                NOVA
+            </h2>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Product
+            </h3>
+
+            <a href="Products.html?category=phones">
+                Phones
+            </a>
+
+            <a href="Products.html?category=laptops">
+                Laptops
+            </a>
+
+            <a href="Products.html?category=audio">
+                Audio
+            </a>
+
+            <a href="Products.html?category=watches">
+                Watches
+            </a>
+
+            <a href="Products.html?category=power">
+                Power
+            </a>
+
+            <a href="Products.html?category=chargers">
+                Chargers
+            </a>
+
+            <a href="Products.html?category=accessories">
+                Accessories
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Company
+            </h3>
+
+            <a href="About.html">
+                About
+            </a>
+
+            <a href="#">
+                Careers
+            </a>
+
+            <a href="#">
+                Privacy
+            </a>
+
+            <a href="#">
+                Terms
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Support
+            </h3>
+
+            <a href="Contact.html">
+                Contact
+            </a>
+
+            <a href="#">
+                Help Center
+            </a>
+
+            <a href="#">
+                FAQ
+            </a>
+
+            <a href="#">
+                Shipping
+            </a>
+
+        </div>
+
+
+        <div class="footer-social">
+
+            <h3>
+                Follow Us
+            </h3>
+
+            <p>
+                Stay connected with NOVA.
+            </p>
+
+            <div class="social-icons">
+
+                <a
+                    href="https://instagram.com/iamprincekamsi/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                >
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a
+                    href="https://tiktok.com/@iamprincewill8/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="TikTok"
+                >
+                    <i class="fab fa-tiktok"></i>
+                </a>
+
+                <a
+                    href="https://youtube.com/@Princekamsiyochukwu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="YouTube"
+                >
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+                <a
+                    href="https://wa.me/2348119819202/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="WhatsApp"
+                >
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 NOVA. All rights reserved.
+        </p>
+
+        <div>
+
+            <a href="#">
+                Privacy
+            </a>
+
+            <a href="#">
+                Terms
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<button
+    id="back-to-top"
+    class="back-to-top"
+    aria-label="Back to top"
+>
+    ↑
+</button>
+
+
+<script src="site.js"></script>
+
+</body>
+
+</html>

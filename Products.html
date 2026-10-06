@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>NOVA | Products</title>
+
+<link
+    rel="stylesheet"
+    href="Products.css"
+>
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+>
+
+
+</head>
+
+<body>
+
+<header class="top-header">
+
+
+<a
+    href="index.html"
+    class="logo"
+>
+    NOVA
+</a>
+
+<nav class="top-links">
+
+    <a href="index.html">Home</a>
+    <a href="Products.html">Products</a>
+    <a href="Categories.html">Categories</a>
+    <a href="Deals.html">Deals</a>
+    <a href="About.html">About</a>
+    <a href="Contact.html">Contact</a>
+
+</nav>
+
+<div class="nav-right">
+
+    <button
+        type="button"
+        class="header-icon search-button"
+        id="search-button"
+        aria-label="Search"
+    >
+        ⌕
+    </button>
+
+    <a
+        href="Cart.html"
+        class="header-icon cart-button"
+        aria-label="Shopping cart"
+    >
+        🛒
+
+        <span
+            class="cart-count"
+            id="cart-count"
+        >
+            0
+        </span>
+    </a>
+
+    <button
+        type="button"
+        class="hamburger-button"
+        id="menu-button"
+        aria-label="Open menu"
+        aria-expanded="false"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+</div>
+
+
+</header>
+
+<div
+    class="search-dropdown"
+    id="search-dropdown"
+>
+
+
+<div class="search-box">
+
+    <span class="search-symbol">
+        ⌕
+    </span>
+
+    <input
+        type="text"
+        id="search-input"
+        placeholder="Search products..."
+        autocomplete="off"
+    >
+
+    <button
+        type="button"
+        class="close-search"
+        id="close-search"
+        aria-label="Close search"
+    >
+        ×
+    </button>
+
+</div>
+
+<div
+    class="search-results"
+    id="search-results"
+></div>
+
+
+</div>
+
+<div
+    class="dropdown-overlay"
+    id="dropdown-overlay"
+></div>
+
+<section class="hero">
+
+
+<div class="hero-text">
+
+    <h1 data-typewriter>
+        Explore Our Products
+    </h1>
+
+    <p>
+        Find the Perfect Tech For Your Lifestyle.
+    </p>
+
+</div>
+
+
+</section>
+
+<section class="product-section">
+
+
+<div class="category-nav">
+
+    <button
+        type="button"
+        class="category-button active"
+        data-category="all"
+    >
+        All
+    </button>
+
+    <button
+        type="button"
+        class="category-button"
+        data-category="phones"
+    >
+        Phones
+    </button>
+
+    <button
+        type="button"
+        class="category-button"
+        data-category="laptops"
+    >
+        Laptops
+    </button>
+
+    <button
+        type="button"
+        class="category-button"
+        data-category="audio"
+    >
+        Audio
+    </button>
+
+    <button
+        type="button"
+        class="category-button"
+        data-category="watches"
+    >
+        Watches
+    </button>
+
+    <button
+        type="button"
+        class="category-button"
+        data-category="power"
+    >
+        Power
+    </button>
+
+    <button
+        type="button"
+        class="category-button"
+        data-category="chargers"
+    >
+        Chargers
+    </button>
+
+    <button
+        type="button"
+        class="category-button"
+        data-category="accessories"
+    >
+        Accessories
+    </button>
+
+</div>
+
+
+<div class="product-layout">
+
+    <aside class="sidebar">
+
+        <h2>
+            All Categories
+        </h2>
+
+        <button
+            type="button"
+            class="side-category active"
+            data-category="all"
+        >
+            <span>
+                All
+            </span>
+        </button>
+
+        <button
+            type="button"
+            class="side-category"
+            data-category="phones"
+        >
+            <span>
+                Phones
+            </span>
+        </button>
+
+        <button
+            type="button"
+            class="side-category"
+            data-category="laptops"
+        >
+            <span>
+                Laptops
+            </span>
+        </button>
+
+        <button
+            type="button"
+            class="side-category"
+            data-category="audio"
+        >
+            <span>
+                Audio
+            </span>
+        </button>
+
+        <button
+            type="button"
+            class="side-category"
+            data-category="watches"
+        >
+            <span>
+                Watches
+            </span>
+        </button>
+
+        <button
+            type="button"
+            class="side-category"
+            data-category="power"
+        >
+            <span>
+                Power
+            </span>
+        </button>
+
+        <button
+            type="button"
+            class="side-category"
+            data-category="chargers"
+        >
+            <span>
+                Chargers
+            </span>
+        </button>
+
+        <button
+            type="button"
+            class="side-category"
+            data-category="accessories"
+        >
+            <span>
+                Accessories
+            </span>
+        </button>
+
+    </aside>
+
+
+    <div class="products-area">
+
+        <div class="advanced-filters" id="advanced-filters">
+                    <label>Price <select id="price-filter"><option value="all">All prices</option><option value="0-100000">Under ₦100k</option><option value="100000-500000">₦100k – ₦500k</option><option value="500000-800000">₦500k – ₦800k</option><option value="800000-99999999">₦800k+</option></select></label>
+                    <label>Rating <select id="rating-filter"><option value="0">All ratings</option><option value="4.5">4.5★ & up</option><option value="4.7">4.7★ & up</option><option value="4.8">4.8★ & up</option></select></label>
+                    <label>Sort <select id="sort-products"><option value="featured">Featured</option><option value="price-low">Price: Low to High</option><option value="price-high">Price: High to Low</option><option value="rating-high">Highest rated</option><option value="name">Name A–Z</option></select></label>
+                    <button type="button" id="clear-filters">Reset</button>
+                    <a class="compare-page-link" href="Compare.html">Compare <span id="compare-count">0</span></a>
+                </div>
+
+                <div class="products-header">
+
+            <div>
+
+                <h2 id="category-title">
+                    All Products
+                </h2>
+
+                <p id="product-count">
+                    Showing 20 products
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="product-container">
+
+
+            <div
+                class="product-card"
+                data-category="phones"
+                data-product-id="nova-aura"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="aura-graphite-01.png"
+                        alt="NOVA AURA"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>NOVA AURA</h3>
+
+                    <p class="description">
+                        Flagship smartphone engineered for a refined everyday experience.
+                    </p>
+
+                    <p class="price">
+                        ₦850,000
+                    </p>
+
+                    <a
+                        href="Product-details.html?id=nova-aura"
+                        class="view-details"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="product-card"
+                data-category="phones"
+                data-product-id="nova-pulse"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="pulse-midnight-01.png"
+                        alt="NOVA PULSE"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>NOVA PULSE</h3>
+
+                    <p class="description">
+                        Performance-focused smartphone built for speed and everyday power.
+                    </p>
+
+                    <p class="price">
+                        ₦720,000
+                    </p>
+
+                    <a
+                        href="Product-details.html?id=nova-pulse"
+                        class="view-details"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="product-card"
+                data-category="phones"
+                data-product-id="nova-flex"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="flex-obsidian-01.png"
+                        alt="NOVA FLEX"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>NOVA FLEX</h3>
+
+                    <p class="description">
+                        A sophisticated foldable smartphone designed for versatility.
+                    </p>
+
+                    <p class="price">
+                        ₦1,150,000
+                    </p>
+
+                    <a
+                        href="Product-details.html?id=nova-flex"
+                        class="view-details"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="product-card"
+                data-category="phones"
+                data-product-id="nova-core"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="core-black-01.png"
+                        alt="NOVA CORE"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>NOVA CORE</h3>
+
+                    <p class="description">
+                        Premium everyday smartphone with balanced performance and design.
+                    </p>
+
+                    <p class="price">
+                        ₦480,000
+                    </p>
+
+                    <a
+                        href="Product-details.html?id=nova-core"
+                        class="view-details"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="product-card"
+                data-category="laptops"
+                data-product-id="nova-luma"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="luma-black-01.png"
+                        alt="NOVA LUMA"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>NOVA LUMA</h3>
+
+                    <p class="description">
+                        Ultra-light laptop designed for mobility, productivity and style.
+                    </p>
+
+                    <p class="price">
+                        ₦980,000
+                    </p>
+
+                    <a
+                        href="Product-details.html?id=nova-luma"
+                        class="view-details"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="product-card"
+                data-category="laptops"
+                data-product-id="nova-vantage"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="vantage-graphite-01.png"
+                        alt="NOVA VANTAGE"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>NOVA VANTAGE</h3>
+
+                    <p class="description">
+                        Professional laptop built for demanding work and creative workflows.
+                    </p>
+
+                    <p class="price">
+                        ₦1,350,000
+                    </p>
+
+                    <a
+                        href="Product-details.html?id=nova-vantage"
+                        class="view-details"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="product-card"
+                data-category="laptops"
+                data-product-id="nova-edge"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="edge-midnight-01.png"
+                        alt="NOVA EDGE"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>NOVA EDGE</h3>
+
+                    <p class="description">
+                        Everyday laptop combining portability, performance and clean design.
+                    </p>
+
+                    <p class="price">
+                        ₦780,000
+                    </p>
+
+                    <a
+                        href="Product-details.html?id=nova-edge"
+                        class="view-details"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="product-card"
+                data-category="audio"
+                data-product-id="nova-sonic"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="sonic-black-01.png"
+                        alt="NOVA SONIC"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>NOVA SONIC</h3>
+
+                    <p class="description">
+                        Premium wireless earbuds designed for immersive everyday listening.
+                    </p>
+
+                    <p class="price">
+                        ₦85,000
+                    </p>
+
+                    <a
+                        href="Product-details.html?id=nova-sonic"
+                        class="view-details"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="product-card"
+                data-category="audio"
+                data-product-id="nova-sonic-plus"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="sonic-plus-graphite-01.png"
+                        alt="NOVA SONIC+"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>NOVA SONIC+</h3>
+
+                    <p class="description">
+                        Flagship earbuds delivering richer sound and a refined listening experience.
+                    </p>
+
+                    <p class="price">
+                        ₦125,000
+                    </p>
+
+                    <a
+                        href="Product-details.html?id=nova-sonic-plus"
+                        class="view-details"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="product-card"
+                data-category="audio"
+                data-product-id="nova-echo"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="echo-black-01.png"
+                        alt="NOVA ECHO"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>NOVA ECHO</h3>
+
+                    <p class="description">
+                        Over-ear headphones crafted for immersive sound and long listening sessions.
+                    </p>
+
+                    <p class="price">
+                        ₦165,000
+                    </p>
+
+                    <a
+                        href="Product-details.html?id=nova-echo"
+                        class="view-details"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="product-card"
+                data-category="audio"
+                data-product-id="nova-beam"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="beam-black-01.png"
+                        alt="NOVA BEAM"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>NOVA BEAM</h3>
+
+                    <p class="description">
+                        Portable smart speaker designed to bring sound anywhere.
+                    </p>
+
+                    <p class="price">
+                        ₦110,000
+                    </p>
+
+                    <a
+                        href="Product-details.html?id=nova-beam"
+                        class="view-details"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="product-card"
+                data-category="watches"
+                data-product-id="nova-pulse-watch"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="pulse-watch-graphite-01.png"
+                        alt="NOVA PULSE WATCH"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>NOVA PULSE WATCH</h3>
+
+                    <p class="description">
+                        Flagship smartwatch combining intelligent features with refined design.
+                    </p>
+
+                    <p class="price">
+                        ₦220,000
+                    </p>
+
+                    <a
+                        href="Product-details.html?id=nova-pulse-watch"
+                        class="view-details"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="product-card"
+                data-category="watches"
+                data-product-id="nova-watch-se"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="watch-se-black-01.png"
+                        alt="NOVA WATCH SE"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>NOVA WATCH SE</h3>
+
+                    <p class="description">
+                        Accessible smartwatch with the essentials for everyday life.
+                    </p>
+
+                    <p class="price">
+                        ₦135,000
+                    </p>
+
+                    <a
+                        href="Product-details.html?id=nova-watch-se"
+                        class="view-details"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="product-card"
+                data-category="power"
+                data-product-id="nova-vault"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="vault-black-01.png"
+                        alt="NOVA VAULT"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>NOVA VAULT</h3>
+
+                    <p class="description">
+                        Premium portable power designed to keep your essential devices moving.
+                    </p>
+
+                    <p class="price">
+                        ₦75,000
+                    </p>
+
+                    <a
+                        href="Product-details.html?id=nova-vault"
+                        class="view-details"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="product-card"
+                data-category="power"
+                data-product-id="nova-vault-pro"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="vault-pro-graphite-01.png"
+                        alt="NOVA VAULT PRO"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>NOVA VAULT PRO</h3>
+
+                    <p class="description">
+                        High-capacity portable power built for heavier everyday demands.
+                    </p>
+
+                    <p class="price">
+                        ₦115,000
+                    </p>
+
+                    <a
+                        href="Product-details.html?id=nova-vault-pro"
+                        class="view-details"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="product-card"
+                data-category="chargers"
+                data-product-id="nova-arc"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="arc-black-01.png"
+                        alt="NOVA ARC"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>NOVA ARC</h3>
+
+                    <p class="description">
+                        Magnetic wireless charger with a clean, compact form.
+                    </p>
+
+                    <p class="price">
+                        ₦65,000
+                    </p>
+
+                    <a
+                        href="Product-details.html?id=nova-arc"
+                        class="view-details"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="product-card"
+                data-category="chargers"
+                data-product-id="nova-grid"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="grid-black-01.png"
+                        alt="NOVA GRID"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>NOVA GRID</h3>
+
+                    <p class="description">
+                        Multi-port charging hub designed for a streamlined setup.
+                    </p>
+
+                    <p class="price">
+                        ₦55,000
+                    </p>
+
+                    <a
+                        href="Product-details.html?id=nova-grid"
+                        class="view-details"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="product-card"
+                data-category="accessories"
+                data-product-id="nova-link"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="link-black-01.png"
+                        alt="NOVA LINK"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>NOVA LINK</h3>
+
+                    <p class="description">
+                        Durable USB-C cable designed for dependable everyday connectivity.
+                    </p>
+
+                    <p class="price">
+                        ₦25,000
+                    </p>
+
+                    <a
+                        href="Product-details.html?id=nova-link"
+                        class="view-details"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="product-card"
+                data-category="accessories"
+                data-product-id="nova-hub"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="hub-graphite-01.png"
+                        alt="NOVA HUB"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>NOVA HUB</h3>
+
+                    <p class="description">
+                        USB-C laptop hub designed to expand your workspace.
+                    </p>
+
+                    <p class="price">
+                        ₦70,000
+                    </p>
+
+                    <a
+                        href="Product-details.html?id=nova-hub"
+                        class="view-details"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="product-card"
+                data-category="accessories"
+                data-product-id="nova-dock"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="dock-black-01.png"
+                        alt="NOVA DOCK"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <h3>NOVA DOCK</h3>
+
+                    <p class="description">
+                        Desktop charging dock created for a cleaner, more organized setup.
+                    </p>
+
+                    <p class="price">
+                        ₦95,000
+                    </p>
+
+                    <a
+                        href="Product-details.html?id=nova-dock"
+                        class="view-details"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<footer class="footer">
+
+
+<div class="footer-content">
+
+    <div class="footer-brand">
+
+        <h2>
+            NOVA
+        </h2>
+
+        <p>
+            Technology refined for your everyday life.
+        </p>
+
+    </div>
+
+
+    <div class="footer-column">
+
+        <h3>
+            Product
+        </h3>
+
+        <a href="Products.html">Phones</a>
+        <a href="Products.html">Laptops</a>
+        <a href="Products.html">Audio</a>
+        <a href="Products.html">Accessories</a>
+
+    </div>
+
+
+    <div class="footer-column">
+
+        <h3>
+            Company
+        </h3>
+
+        <a href="About.html">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+
+    </div>
+
+
+    <div class="footer-column">
+
+        <h3>
+            Support
+        </h3>
+
+        <a href="Contact.html">Contact</a>
+        <a href="#">Help Center</a>
+        <a href="#">FAQ</a>
+        <a href="#">Shipping</a>
+
+    </div>
+
+
+    <div class="footer-social">
+
+        <h3>
+            Follow Us
+        </h3>
+
+        <p>
+            Stay connected with NOVA.
+        </p>
+
+        <div class="social-icons">
+
+            <a
+                href="https://instagram.com/iamprincekamsi/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a
+                href="https://tiktok.com/@iamprincewill8/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fab fa-tiktok"></i>
+            </a>
+
+            <a
+                href="https://youtube.com/@Princekamsiyochukwu"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fab fa-youtube"></i>
+            </a>
+
+            <a
+                href="https://wa.me/2348119819202/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+    <p>
+        © 2026 NOVA. All rights reserved.
+    </p>
+
+</div>
+
+
+</footer>
+
+<button
+id="back-to-top"
+class="back-to-top"
+aria-label="Back to top"
+
+>
+
+
+↑
+
+
+</button>
+
+<script src="site.js"></script>
+
+<script src="Product.js"></script>
+
+</body>
+
+</html>

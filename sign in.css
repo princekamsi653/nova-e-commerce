@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(
+            circle at 50% 20%,
+            rgba(68, 0, 128, 0.18),
+            transparent 38%
+        ),
+        #000;
+    color: #fff;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.auth-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 45px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-logo {
+    margin-bottom: 45px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 460px;
+    padding: 45px;
+    background: rgba(17, 17, 17, 0.96);
+    border: 1px solid #242424;
+    border-radius: 15px;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.55);
+}
+
+.auth-heading {
+    margin-bottom: 30px;
+}
+
+.eyebrow {
+    margin-bottom: 10px;
+    color: #8b5cf6;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.auth-heading h1 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.1;
+}
+
+.auth-heading p:last-child {
+    color: #888;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.form-group > label,
+.label-row label {
+    color: #ddd;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.label-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.label-row a {
+    color: #a970ff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.label-row a:hover {
+    color: #c59aff;
+}
+
+.form-group input {
+    width: 100%;
+    height: 48px;
+    padding: 0 14px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    outline: none;
+    background: #0d0d0d;
+    color: #fff;
+    font-size: 14px;
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.form-group input::placeholder {
+    color: #555;
+}
+
+.form-group input:focus {
+    border-color: rgb(68, 0, 128);
+    box-shadow: 0 0 0 3px rgba(68, 0, 128, 0.12);
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    padding-right: 70px;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    padding: 4px 6px;
+    background: transparent;
+    color: #999;
+    font-size: 12px;
+}
+
+.password-toggle:hover {
+    color: #fff;
+}
+
+.remember-row {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #999;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.remember-row input {
+    width: 15px;
+    height: 15px;
+    accent-color: rgb(68, 0, 128);
+}
+
+.signin-button {
+    width: 100%;
+    height: 48px;
+    margin-top: 2px;
+    border-radius: 6px;
+    background: rgb(68, 0, 128);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    transition:
+        background 0.3s ease,
+        transform 0.2s ease;
+}
+
+.signin-button:hover {
+    background: rgb(85, 0, 160);
+}
+
+.signin-button:active {
+    transform: scale(0.985);
+}
+
+.form-message {
+    min-height: 18px;
+    color: #aaa;
+    font-size: 12px;
+    text-align: center;
+}
+
+.divider {
+    height: 1px;
+    margin: 30px 0 25px;
+    position: relative;
+    background: #282828;
+}
+
+.divider span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 12px;
+    background: #111;
+    color: #666;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.create-account {
+    color: #888;
+    font-size: 13px;
+    text-align: center;
+}
+
+.create-account a {
+    color: #a970ff;
+    text-decoration: none;
+}
+
+.create-account a:hover {
+    color: #c59aff;
+}
+
+.back-home {
+    display: block;
+    margin-top: 25px;
+    color: #777;
+    text-decoration: none;
+    font-size: 13px;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.back-home:hover {
+    color: #fff;
+}
+
+.copyright {
+    margin-top: 30px;
+    color: #555;
+    font-size: 11px;
+    text-align: center;
+}
+
+@media (max-width: 550px) {
+    .auth-page {
+        padding: 30px 15px 25px;
+    }
+
+    .auth-logo {
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    .auth-card {
+        padding: 32px 25px;
+        border-radius: 12px;
+    }
+
+    .auth-heading h1 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 380px) {
+    .auth-card {
+        padding: 28px 20px;
+    }
+
+    .auth-heading h1 {
+        font-size: 31px;
+    }
+
+    .label-row {
+        gap: 10px;
+    }
+}

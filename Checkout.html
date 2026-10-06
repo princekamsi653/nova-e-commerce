@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NOVA | Checkout</title>
+
+    <link
+        rel="stylesheet"
+        href="Checkout.css"
+    >
+
+</head>
+
+<body>
+
+    <header class="checkout-header">
+
+        <a
+            href="index.html"
+            class="checkout-logo"
+        >
+            NOVA
+        </a>
+
+
+        <div class="checkout-title">
+
+            <span>
+                Secure Checkout
+            </span>
+
+        </div>
+
+
+        <a
+            href="Cart.html"
+            class="back-cart"
+        >
+            ← Back to Cart
+        </a>
+
+    </header>
+
+
+    <main class="checkout-page">
+
+        <div class="checkout-heading">
+
+            <p>
+                NOVA SHOPPING
+            </p>
+
+            <h1>
+                Complete Your Order
+            </h1>
+
+            <span>
+                Enter your details below to complete your purchase.
+            </span>
+
+        </div>
+
+
+        <div
+            class="empty-checkout"
+            id="empty-checkout"
+        >
+
+            <div class="empty-checkout-icon">
+                🛒
+            </div>
+
+            <h2>
+                Your cart is empty
+            </h2>
+
+            <p>
+                Add some products before proceeding to checkout.
+            </p>
+
+            <a href="Products.html">
+                Continue Shopping
+            </a>
+
+        </div>
+
+
+        <form
+            class="checkout-layout"
+            id="checkout-form"
+        >
+
+            <div class="checkout-left">
+
+
+                <section class="checkout-card">
+
+                    <div class="section-heading">
+
+                        <span class="section-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h2>
+                                Contact Information
+                            </h2>
+
+                            <p>
+                                How can we reach you?
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group full">
+
+                            <label for="full-name">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="full-name"
+                                name="fullName"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="08012345678"
+                                autocomplete="tel"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <section class="checkout-card">
+
+                    <div class="section-heading">
+
+                        <span class="section-number">
+                            02
+                        </span>
+
+                        <div>
+
+                            <h2>
+                                Delivery Address
+                            </h2>
+
+                            <p>
+                                Where should we deliver your order?
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group full">
+
+                            <label for="address">
+                                Street Address
+                            </label>
+
+                            <input
+                                type="text"
+                                id="address"
+                                name="address"
+                                placeholder="House number, street name"
+                                autocomplete="street-address"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="city">
+                                City
+                            </label>
+
+                            <input
+                                type="text"
+                                id="city"
+                                name="city"
+                                placeholder="Enter city"
+                                autocomplete="address-level2"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="state">
+                                State
+                            </label>
+
+                            <select
+                                id="state"
+                                name="state"
+                                required
+                            >
+
+                                <option value="">
+                                    Select state
+                                </option>
+
+                                <option value="Abia">
+                                    Abia
+                                </option>
+
+                                <option value="Adamawa">
+                                    Adamawa
+                                </option>
+
+                                <option value="Akwa Ibom">
+                                    Akwa Ibom
+                                </option>
+
+                                <option value="Anambra">
+                                    Anambra
+                                </option>
+
+                                <option value="Bauchi">
+                                    Bauchi
+                                </option>
+
+                                <option value="Bayelsa">
+                                    Bayelsa
+                                </option>
+
+                                <option value="Benue">
+                                    Benue
+                                </option>
+
+                                <option value="Borno">
+                                    Borno
+                                </option>
+
+                                <option value="Cross River">
+                                    Cross River
+                                </option>
+
+                                <option value="Delta">
+                                    Delta
+                                </option>
+
+                                <option value="Ebonyi">
+                                    Ebonyi
+                                </option>
+
+                                <option value="Edo">
+                                    Edo
+                                </option>
+
+                                <option value="Ekiti">
+                                    Ekiti
+                                </option>
+
+                                <option value="Enugu">
+                                    Enugu
+                                </option>
+
+                                <option value="Gombe">
+                                    Gombe
+                                </option>
+
+                                <option value="Imo">
+                                    Imo
+                                </option>
+
+                                <option value="Jigawa">
+                                    Jigawa
+                                </option>
+
+                                <option value="Kaduna">
+                                    Kaduna
+                                </option>
+
+                                <option value="Kano">
+                                    Kano
+                                </option>
+
+                                <option value="Katsina">
+                                    Katsina
+                                </option>
+
+                                <option value="Kebbi">
+                                    Kebbi
+                                </option>
+
+                                <option value="Kogi">
+                                    Kogi
+                                </option>
+
+                                <option value="Kwara">
+                                    Kwara
+                                </option>
+
+                                <option value="Lagos">
+                                    Lagos
+                                </option>
+
+                                <option value="Nasarawa">
+                                    Nasarawa
+                                </option>
+
+                                <option value="Niger">
+                                    Niger
+                                </option>
+
+                                <option value="Ogun">
+                                    Ogun
+                                </option>
+
+                                <option value="Ondo">
+                                    Ondo
+                                </option>
+
+                                <option value="Osun">
+                                    Osun
+                                </option>
+
+                                <option value="Oyo">
+                                    Oyo
+                                </option>
+
+                                <option value="Plateau">
+                                    Plateau
+                                </option>
+
+                                <option value="Rivers">
+                                    Rivers
+                                </option>
+
+                                <option value="Sokoto">
+                                    Sokoto
+                                </option>
+
+                                <option value="Taraba">
+                                    Taraba
+                                </option>
+
+                                <option value="Yobe">
+                                    Yobe
+                                </option>
+
+                                <option value="Zamfara">
+                                    Zamfara
+                                </option>
+
+                                <option value="FCT">
+                                    Federal Capital Territory
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group full">
+
+                            <label for="landmark">
+                                Landmark
+                            </label>
+
+                            <input
+                                type="text"
+                                id="landmark"
+                                name="landmark"
+                                placeholder="Nearby landmark or delivery note"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <section class="checkout-card">
+
+                    <div class="section-heading">
+
+                        <span class="section-number">
+                            03
+                        </span>
+
+                        <div>
+
+                            <h2>
+                                Delivery Method
+                            </h2>
+
+                            <p>
+                                Choose how you'd like to receive your order.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="delivery-options">
+
+
+                        <label
+                            class="delivery-option"
+                        >
+
+                            <input
+                                type="radio"
+                                name="delivery"
+                                value="standard"
+                                checked
+                            >
+
+                            <span class="radio-mark"></span>
+
+
+                            <span class="delivery-details">
+
+                                <strong>
+                                    Standard Delivery
+                                </strong>
+
+                                <small>
+                                    3 - 5 business days
+                                </small>
+
+                            </span>
+
+
+                            <strong class="delivery-price">
+                                ₦15,000
+                            </strong>
+
+                        </label>
+
+
+                        <label
+                            class="delivery-option"
+                        >
+
+                            <input
+                                type="radio"
+                                name="delivery"
+                                value="express"
+                            >
+
+                            <span class="radio-mark"></span>
+
+
+                            <span class="delivery-details">
+
+                                <strong>
+                                    Express Delivery
+                                </strong>
+
+                                <small>
+                                    1 - 2 business days
+                                </small>
+
+                            </span>
+
+
+                            <strong class="delivery-price">
+                                ₦30,000
+                            </strong>
+
+                        </label>
+
+
+                        <label
+                            class="delivery-option"
+                        >
+
+                            <input
+                                type="radio"
+                                name="delivery"
+                                value="pickup"
+                            >
+
+                            <span class="radio-mark"></span>
+
+
+                            <span class="delivery-details">
+
+                                <strong>
+                                    Store Pickup
+                                </strong>
+
+                                <small>
+                                    Ready within 24 hours
+                                </small>
+
+                            </span>
+
+
+                            <strong class="delivery-price">
+                                Free
+                            </strong>
+
+                        </label>
+
+                    </div>
+
+                </section>
+
+
+                <section class="checkout-card">
+
+                    <div class="section-heading">
+
+                        <span class="section-number">
+                            04
+                        </span>
+
+                        <div>
+
+                            <h2>
+                                Payment Method
+                            </h2>
+
+                            <p>
+                                Select your preferred payment option.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="payment-options">
+
+
+                        <label
+                            class="payment-option"
+                        >
+
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="card"
+                                checked
+                            >
+
+                            <span class="payment-radio"></span>
+
+
+                            <span class="payment-icon">
+                                💳
+                            </span>
+
+
+                            <span>
+
+                                <strong>
+                                    Card Payment
+                                </strong>
+
+                                <small>
+                                    Visa, Mastercard and Verve
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label
+                            class="payment-option"
+                        >
+
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="transfer"
+                            >
+
+                            <span class="payment-radio"></span>
+
+
+                            <span class="payment-icon">
+                                🏦
+                            </span>
+
+
+                            <span>
+
+                                <strong>
+                                    Bank Transfer
+                                </strong>
+
+                                <small>
+                                    Pay directly from your bank
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label
+                            class="payment-option"
+                        >
+
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="cod"
+                            >
+
+                            <span class="payment-radio"></span>
+
+
+                            <span class="payment-icon">
+                                📦
+                            </span>
+
+
+                            <span>
+
+                                <strong>
+                                    Pay on Delivery
+                                </strong>
+
+                                <small>
+                                    Available for eligible orders
+                                </small>
+
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <aside class="checkout-right">
+
+                <section class="order-summary">
+
+                    <div class="summary-heading">
+
+                        <div>
+
+                            <p>
+                                YOUR ORDER
+                            </p>
+
+                            <h2>
+                                Order Summary
+                            </h2>
+
+                        </div>
+
+
+                        <span id="summary-item-count">
+                            0 items
+                        </span>
+
+                    </div>
+
+
+                    <div
+                        class="summary-products"
+                        id="summary-products"
+                    ></div>
+
+
+                    <div class="summary-divider"></div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            Subtotal
+                        </span>
+
+                        <strong id="checkout-subtotal">
+                            ₦0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            Delivery
+                        </span>
+
+                        <strong id="checkout-delivery">
+                            ₦15,000
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-divider"></div>
+
+
+                    <div class="summary-total">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <strong id="checkout-total">
+                            ₦0
+                        </strong>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="place-order-button"
+                        id="place-order-button"
+                    >
+                        Place Order
+                    </button>
+
+
+                    <div class="checkout-benefits">
+
+                        <div>
+                            <span>
+                                ✓
+                            </span>
+
+                            Secure checkout
+                        </div>
+
+                        <div>
+                            <span>
+                                ✓
+                            </span>
+
+                            Fast delivery
+                        </div>
+
+                        <div>
+                            <span>
+                                ✓
+                            </span>
+
+                            1 Year warranty
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </aside>
+
+        </form>
+
+
+        <section
+            class="order-success"
+            id="order-success"
+        >
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <p class="success-label">
+                ORDER CONFIRMED
+            </p>
+
+            <h2>
+                Thank You For Your Order
+            </h2>
+
+            <p class="success-text">
+                Your NOVA order has been successfully placed.
+            </p>
+
+            <div class="success-details">
+
+                <div>
+
+                    <span>
+                        Order Number
+                    </span>
+
+                    <strong id="order-number">
+                        NOVA-000000
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Payment
+                    </span>
+
+                    <strong id="success-payment">
+                        Card Payment
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Delivery
+                    </span>
+
+                    <strong id="success-delivery">
+                        Standard Delivery
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="success-total">
+                        ₦0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="success-actions">
+
+                <a
+                    href="Products.html"
+                    class="success-button"
+                >
+                    Continue Shopping
+                </a>
+
+                <a
+                    href="index.html"
+                    class="success-secondary"
+                >
+                    Back Home
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="checkout-footer">
+
+        <div>
+
+            <strong>
+                NOVA
+            </strong>
+
+            <span>
+                Technology refined for your everyday life.
+            </span>
+
+        </div>
+
+
+        <p>
+            © 2026 NOVA. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="Product.js"></script>
+    <script src="site.js"></script>
+    <script src="Checkout.js"></script>
+
+</body>
+
+</html>

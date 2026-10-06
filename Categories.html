@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NOVA | Categories</title>
+
+    <link
+        rel="stylesheet"
+        href="Categories.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+<body class="categories-page">
+
+
+<header class="top-header">
+
+    <a
+        href="index.html"
+        class="logo"
+    >
+        NOVA
+    </a>
+
+    <nav class="top-links">
+
+        <a href="index.html">Home</a>
+        <a href="Products.html">Products</a>
+        <a href="Categories.html">Categories</a>
+        <a href="Deals.html">Deals</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+
+    </nav>
+
+    <div class="nav-right">
+
+        <button
+            type="button"
+            class="header-icon search-button"
+            id="search-button"
+            aria-label="Search"
+        >
+            ⌕
+        </button>
+
+        <a
+            href="Cart.html"
+            class="header-icon cart-button"
+            aria-label="Shopping cart"
+        >
+            🛒
+
+            <span
+                class="cart-count"
+                id="cart-count"
+            >
+                0
+            </span>
+
+        </a>
+
+        <button
+            type="button"
+            class="hamburger-button"
+            id="menu-button"
+            aria-label="Open menu"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+</header>
+
+
+<div
+    class="search-dropdown"
+    id="search-dropdown"
+>
+
+    <div class="search-box">
+
+        <span class="search-symbol">
+            ⌕
+        </span>
+
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Search products..."
+            autocomplete="off"
+        >
+
+        <button
+            type="button"
+            class="close-search"
+            id="close-search"
+            aria-label="Close search"
+        >
+            ×
+        </button>
+
+    </div>
+
+    <div
+        class="search-results"
+        id="search-results"
+    ></div>
+
+</div>
+
+
+<div
+    class="dropdown-overlay"
+    id="dropdown-overlay"
+></div>
+
+
+<main>
+
+
+<section class="categories-hero">
+
+    <div class="categories-hero-content">
+
+        <h1 data-typewriter>
+            Shop by Category
+        </h1>
+
+        <p>
+            Find the technology built around the way you live, work and play.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="category-section">
+
+    <div class="section-heading">
+
+        <div>
+
+            <h2>
+                Browse Categories
+            </h2>
+
+        </div>
+
+        <a href="Products.html">
+            View All Products →
+        </a>
+
+    </div>
+
+
+    <div class="category-grid">
+
+
+        <a
+            href="Products.html?category=phones"
+            class="category-card category-large"
+        >
+
+            <img
+                src="aura-graphite-01.png"
+                alt="NOVA Phones"
+            >
+
+            <div class="card-overlay"></div>
+
+            <div class="category-content">
+
+
+                <h3>
+                    Phones
+                </h3>
+
+                <p>
+                    Powerful devices designed for everyday life.
+                </p>
+
+                <strong>
+                    Explore →
+                </strong>
+
+            </div>
+
+        </a>
+
+
+        <a
+            href="Products.html?category=laptops"
+            class="category-card"
+        >
+
+            <img
+                src="luma-black-01.png"
+                alt="NOVA Laptops"
+            >
+
+            <div class="card-overlay"></div>
+
+            <div class="category-content">
+
+
+                <h3>
+                    Laptops
+                </h3>
+
+                <p>
+                    Performance built for work, study and creativity.
+                </p>
+
+                <strong>
+                    Explore →
+                </strong>
+
+            </div>
+
+        </a>
+
+
+        <a
+            href="Products.html?category=audio"
+            class="category-card"
+        >
+
+            <img
+                src="sonic-plus-graphite-01.png"
+                alt="NOVA Audio"
+            >
+
+            <div class="card-overlay"></div>
+
+            <div class="category-content">
+
+
+                <h3>
+                    Audio
+                </h3>
+
+                <p>
+                    Immersive sound designed around your world.
+                </p>
+
+                <strong>
+                    Explore →
+                </strong>
+
+            </div>
+
+        </a>
+
+
+        <a
+            href="Products.html?category=watches"
+            class="category-card"
+        >
+
+            <img
+                src="pulse-watch-graphite-01.png"
+                alt="NOVA Watches"
+            >
+
+            <div class="card-overlay"></div>
+
+            <div class="category-content">
+
+
+                <h3>
+                    Watches
+                </h3>
+
+                <p>
+                    Smart technology designed for your wrist.
+                </p>
+
+                <strong>
+                    Explore →
+                </strong>
+
+            </div>
+
+        </a>
+
+
+        <a
+            href="Products.html?category=power"
+            class="category-card"
+        >
+
+            <img
+                src="vault-black-01.png"
+                alt="NOVA Power"
+            >
+
+            <div class="card-overlay"></div>
+
+            <div class="category-content">
+
+
+                <h3>
+                    Power
+                </h3>
+
+                <p>
+                    Reliable portable power wherever life takes you.
+                </p>
+
+                <strong>
+                    Explore →
+                </strong>
+
+            </div>
+
+        </a>
+
+
+        <a
+            href="Products.html?category=chargers"
+            class="category-card"
+        >
+
+            <img
+                src="arc-black-01.png"
+                alt="NOVA Chargers"
+            >
+
+            <div class="card-overlay"></div>
+
+            <div class="category-content">
+
+
+                <h3>
+                    Chargers
+                </h3>
+
+                <p>
+                    Fast, compact charging for your everyday devices.
+                </p>
+
+                <strong>
+                    Explore →
+                </strong>
+
+            </div>
+
+        </a>
+
+
+        <a
+            href="Products.html?category=accessories"
+            class="category-card"
+        >
+
+            <img
+                src="hub-graphite-01.png"
+                alt="NOVA Accessories"
+            >
+
+            <div class="card-overlay"></div>
+
+            <div class="category-content">
+
+
+                <h3>
+                    Accessories
+                </h3>
+
+                <p>
+                    Thoughtful essentials that complete your setup.
+                </p>
+
+                <strong>
+                    Explore →
+                </strong>
+
+            </div>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+<section class="category-feature">
+
+    <div class="feature-image">
+
+        <img
+            src="generic image 3.jpg"
+            alt="NOVA technology collection"
+        >
+
+    </div>
+
+    <div class="feature-content">
+
+        <p class="eyebrow">
+            TECHNOLOGY REFINED
+        </p>
+
+        <h2>
+            Everything you need.
+            Nothing you don't.
+        </h2>
+
+        <p>
+            From pocket-sized power to everyday essentials,
+            NOVA brings your favourite technology into one
+            refined collection.
+        </p>
+
+        <a
+            href="Products.html"
+            class="feature-button"
+        >
+            Shop All Products
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+
+            <h2>
+                NOVA
+            </h2>
+
+            <p>
+                Technology refined for your everyday life.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Product
+            </h3>
+
+            <a href="Products.html?category=phones">
+                Phones
+            </a>
+
+            <a href="Products.html?category=laptops">
+                Laptops
+            </a>
+
+            <a href="Products.html?category=audio">
+                Audio
+            </a>
+
+            <a href="Products.html?category=watches">
+                Watches
+            </a>
+
+            <a href="Products.html?category=power">
+                Power
+            </a>
+
+            <a href="Products.html?category=chargers">
+                Chargers
+            </a>
+
+            <a href="Products.html?category=accessories">
+                Accessories
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Company
+            </h3>
+
+            <a href="About.html">
+                About
+            </a>
+
+            <a href="#">
+                Careers
+            </a>
+
+            <a href="#">
+                Privacy
+            </a>
+
+            <a href="#">
+                Terms
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Support
+            </h3>
+
+            <a href="Contact.html">
+                Contact
+            </a>
+
+            <a href="#">
+                Help Center
+            </a>
+
+            <a href="#">
+                FAQ
+            </a>
+
+            <a href="#">
+                Shipping
+            </a>
+
+        </div>
+
+
+        <div class="footer-social">
+
+            <h3>
+                Follow Us
+            </h3>
+
+            <p>
+                Stay connected with NOVA.
+            </p>
+
+            <div class="social-icons">
+
+                <a
+                    href="https://instagram.com/iamprincekamsi/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                >
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a
+                    href="https://tiktok.com/@iamprincewill8/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="TikTok"
+                >
+                    <i class="fab fa-tiktok"></i>
+                </a>
+
+                <a
+                    href="https://youtube.com/@Princekamsiyochukwu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="YouTube"
+                >
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+                <a
+                    href="https://wa.me/2348119819202/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="WhatsApp"
+                >
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 NOVA. All rights reserved.
+        </p>
+
+        <div>
+
+            <a href="#">
+                Privacy
+            </a>
+
+            <a href="#">
+                Terms
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="site.js"></script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".category-grid .category-card");
+
+    cards.forEach((card) => {
+        const rect = card.getBoundingClientRect();
+        const cardCenter = rect.left + rect.width / 2;
+        const viewportCenter = window.innerWidth / 2;
+
+        if (cardCenter < viewportCenter) {
+            card.classList.add("nova-slide-left");
+        } else {
+            card.classList.add("nova-slide-right");
+        }
+    });
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("nova-card-visible");
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.15
+        }
+    );
+
+    cards.forEach((card) => {
+        observer.observe(card);
+    });
+});
+</script>
+
+
+</body>
+
+</html>
