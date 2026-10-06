@@ -518,12 +518,12 @@ animation-delay: .24s;
 }
 
 .category-card img {
-width: 100%;
-height: 105%;
-object-fit: cover;
-object-position: center;
-filter: brightness(45%) saturate(40%);
-transition: filter .4s ease, transform .4s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(45%) saturate(40%);
+    transition: filter .4s ease, transform .4s ease;
 }
 
 .category-card:hover img {
@@ -1352,29 +1352,33 @@ html {
     font-size: 13px;
 }
 
-.categories {
-    padding: 70px 25px;
-}
-
-.category-header {
-    margin-bottom: 30px;
-}
-
-.category-header h2 {
-    font-size: 28px;
-}
-
-.category-header a {
-    font-size: 14px;
-}
-
 .category-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
 }
 
 .category-card {
+    position: relative;
+    height: 230px;
+    overflow: hidden;
+}
+
+.category-card > a {
+    position: absolute;
+    inset: 0;
+    width: 100%;
     height: 100%;
+    display: block;
+}
+
+.category-card > a img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
 }
 
 .category-card:nth-child(3) {
@@ -1383,12 +1387,10 @@ html {
 }
 
 .category-card h3 {
+    position: absolute;
     left: 18px;
     bottom: 18px;
-}
-
-.category-card h3 a {
-    font-size: 15px;
+    z-index: 2;
 }
 
 .products {
