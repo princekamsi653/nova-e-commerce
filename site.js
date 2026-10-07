@@ -169,8 +169,8 @@ const NOVA_FALLBACK_PRODUCTS = {
 
     "nova-luma": {
         name: "NOVA LUMA",
-        category: "Laptops",
-        categoryId: "laptops",
+        category: "phones",
+        categoryId: "phones",
         image: "luma-black-01.png",
         images: [
             "luma-black-01.png",
@@ -852,9 +852,9 @@ const NOVA_PRODUCT_DETAILS = {
     },
     "nova-luma": {
         price: "₦699,000", rating: "4.8", reviews: 82,
-        description: "A thin, lightweight laptop for students, creators and professionals who want portability without giving up a polished everyday experience.",
+        description: "An everyday premium smartphone that keeps the essentials strong: a vivid display, reliable cameras, smooth performance and long battery life.",
         specifications: { Display: "14-inch 2.8K display", Processor: "NOVA M2 mobile processor", Memory: "16GB RAM", Battery: "Up to 16 hours", Ports: "2× USB-C, USB-A, audio jack", Weight: "1.25kg" },
-        reviewsList: [["Precious U.","★★★★★","Light enough for lectures and powerful enough for my design work."],["Daniel A.","★★★★★","Excellent screen and the battery lasts through most of my workday."],["Nneka J.","★★★★☆","Very portable and quiet. I would have liked one more full-size port."]]
+        reviewsList: [["Precious U.","★★★★★","Does everything I need without feeling like a compromise."],["Daniel A.","★★★★★","Excellent screen and the battery lasts through most of my workday."],["Nneka J.","★★★★☆","Very portable and quiet. I would have liked one more full-size port."]]
     },
     "nova-vantage": {
         price: "₦899,000", rating: "4.8", reviews: 64,
